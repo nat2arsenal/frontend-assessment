@@ -1,0 +1,73 @@
+.footer {
+  background: $black;
+  padding-top: $spacing-xxlg;
+  padding-bottom: torem(50);
+  margin-top: $spacing-xxlg;
+  a:hover {
+    cursor: pointer;
+  }
+
+  &--copyright {
+    border-top: solid 1px #707070;
+    color: $white;
+    @include flexbox();
+    @include justify-content(space-between);
+    margin-top: $spacing-xxlg;
+    padding-top: $spacing-sm;
+  }
+
+  &--social {
+    @include flexbox();
+    margin-right: $spacing-sm;
+    a {
+      color: $white;
+      margin-right: $spacing-sm;
+    }
+  }
+
+  .logos {
+    min-height: 100%;
+    div {
+      height: 100%;
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-size: 0.7rem;
+          color: #ffffff;
+          text-align: center;
+        }
+
+        .asra-logo {
+          height: 40%;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .links {
+    &--section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .links > div > ul > li > p,
+  a {
+    font-size: small;
+    line-height: 2;
+  }
+}

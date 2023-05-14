@@ -1,0 +1,100 @@
+.booking {
+  &--form {
+    width: 100%;
+    height: auto;
+
+    &__icon {
+      width: torem(66);
+      height: torem(66);
+      background: $light-grey;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--nav {
+    background: $white;
+    @include flexbox();
+    @include justify-content(center);
+
+    &__item {
+      padding: $spacing-lg $spacing-xlg;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        font-size: $small;
+        color: $black;
+        letter-spacing: -0.39px;
+        margin-bottom: 0;
+        margin-top: $spacing-xs;
+      }
+
+      &.active {
+        .booking--form__icon {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+
+  &--content {
+    padding: $spacing-xlg;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    color: #cecece;
+    .form-group {
+      padding-right: 10px;
+      .input {
+        position: relative;
+        .input-group-addon {
+          position: absolute;
+          right: 1.5rem;
+          top: 0.6rem;
+          color: $primary-color;
+        }
+      }
+    }
+    i {
+      position: absolute;
+    }
+  }
+}
+#content-flight > div > div.submit {
+  width: 100%;
+  height: 54px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding-top: 15px;
+  .submit--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    .btn {
+      color: #ffffff;
+    }
+  }
+  .submit--next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $primary-color;
+    padding-right: 20px;
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        margin-left: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
