@@ -3,6 +3,7 @@
   padding-top: $spacing-xxlg;
   padding-bottom: torem(50);
   margin-top: $spacing-xxlg;
+  position: relative;
   a:hover {
     cursor: pointer;
   }
@@ -24,7 +25,14 @@
       margin-right: $spacing-sm;
     }
   }
-
+  &--top {
+    height: 30px;
+    width: 100%;
+    background-color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .logos {
     min-height: 100%;
     div {

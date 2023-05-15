@@ -9709,6 +9709,7 @@ a {
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
   margin-top: 3.75rem;
+  position: relative;
 }
 .footer a:hover {
   cursor: pointer;
@@ -9730,6 +9731,14 @@ a {
 .footer--social a {
   color: #ffffff;
   margin-right: 0.625rem;
+}
+.footer--top {
+  height: 30px;
+  width: 100%;
+  background-color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .footer .logos {
   min-height: 100%;
@@ -10084,8 +10093,8 @@ a {
 }
 .booking--content {
   padding: 1.875rem;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: #cecece;
 }
 .booking--content .form-group {
@@ -10093,6 +10102,22 @@ a {
 }
 .booking--content .form-group .input {
   position: relative;
+}
+.booking--content .form-group .input input {
+  color: #000000;
+}
+.booking--content .form-group .input select {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .booking--content .form-group .input .input-group-addon {
   position: absolute;
@@ -10102,6 +10127,26 @@ a {
 }
 .booking--content i {
   position: absolute;
+}
+.booking--content #second-row .form-group label {
+  display: flex;
+  justify-content: space-between;
+}
+.booking--content #second-row .form-group label span {
+  font-size: 0.75rem;
+  color: #ce9c12;
+}
+.booking--content #second-row .form-group label span:hover {
+  cursor: pointer;
+}
+.booking--content #second-row .form-group .input {
+  position: relative;
+}
+.booking--content #second-row .form-group .input p {
+  position: absolute;
+  color: #000000;
+  top: 0.1rem;
+  left: 0.8rem;
 }
 
 #content-flight > div > div.submit {
@@ -10119,6 +10164,11 @@ a {
 }
 #content-flight > div > div.submit .submit--btn .btn {
   color: #ffffff;
+}
+#content-flight > div > div.submit .submit--btn .btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 #content-flight > div > div.submit .submit--next {
   display: flex;
